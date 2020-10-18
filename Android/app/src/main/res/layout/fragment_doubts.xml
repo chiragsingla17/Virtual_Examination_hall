@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.doubts.doubtsFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:id="@+id/doubtsRecyclerView"
+       android:layout_height="match_parent"/>
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_gravity="bottom|right"
+       android:layout_margin="25dp"
+       android:src="@drawable/add"
+       android:id="@+id/floatingActionButton"
+       android:layout_height="wrap_content"/>
+</FrameLayout>

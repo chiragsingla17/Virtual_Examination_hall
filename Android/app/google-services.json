@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "782093997491",
+    "firebase_url": "https://fliplearn-595fd.firebaseio.com",
+    "project_id": "fliplearn-595fd",
+    "storage_bucket": "fliplearn-595fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782093997491:android:f361de9417194d859d27c6",
+        "android_client_info": {
+          "package_name": "com.example.fliplearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782093997491-d5ekr06mn741n66r8mjckeu88eqdie68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fliplearn",
+            "certificate_hash": "67b38ce6f65d725da4c73e13693a219fcf80e12f"
+          }
+        },
+        {
+          "client_id": "782093997491-1h05mo67ep95uj83s114gef0tjqtqs3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJIQuF4n_B6SvQTiEaovNvV9qkC3ybmOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782093997491-1h05mo67ep95uj83s114gef0tjqtqs3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

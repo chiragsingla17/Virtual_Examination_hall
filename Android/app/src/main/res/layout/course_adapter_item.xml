@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/history"
+        android:layout_height="130dp"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:text="Mathematics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

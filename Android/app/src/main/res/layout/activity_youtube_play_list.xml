@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.youtubePlayListActivity">
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:id="@+id/youtubeView"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:text="Lec-2: Introduction to Relational Database Management System (RDBMS) With Real life examples"
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="UP NEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_height="match_parent"/>
+</LinearLayout>
