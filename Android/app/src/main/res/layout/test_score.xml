@@ -10,36 +10,61 @@
     android:layout_marginRight="20dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:orientation="vertical"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/textScore"
-            android:layout_gravity="center"
-            android:text="SCORE : 4/6"
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:gravity="center"
-            android:text="Congratulations! Based on your performance you have won 150 coins"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:textColor="@android:color/white"
-            android:id="@+id/submitButtonBB"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:background="@android:color/holo_blue_dark"
-            android:text="PRESS TO CLOSE"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textScore"
+                android:layout_gravity="center"
+                android:text="SCORE : 4/6"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="Congratulations! Based on your performance you have won 150 coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/chart"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_marginTop="10dp"
+                android:foregroundGravity="center"
+                android:layout_height="300dp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/resultRecyclerView"
+                android:layout_height="wrap_content"/>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barGraph"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="220dp" />
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/Next_Quiz"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Next QUIZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.cardview.widget.CardView>

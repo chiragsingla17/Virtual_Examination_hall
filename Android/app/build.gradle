@@ -13,6 +13,8 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -85,4 +87,10 @@ dependencies {
 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+
+
+    //Pie chart
+    implementation 'com.github.lecho:hellocharts-android:v1.5.8'
+    //Bar Graph
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
 }

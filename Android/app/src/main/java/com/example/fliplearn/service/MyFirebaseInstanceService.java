@@ -48,7 +48,6 @@ public class MyFirebaseInstanceService extends FirebaseMessagingService {
         String title = data.get("title").toString();
         String body = data.get("body").toString();
 
-
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         String NOTIFICATION_CHANNEL_ID = getPackageName();
 
@@ -74,10 +73,7 @@ public class MyFirebaseInstanceService extends FirebaseMessagingService {
                 .setLargeIcon(getBitmapFromURL(url))
                 .setStyle(new NotificationCompat.BigTextStyle())
                 .setContentInfo("Info");
-
         notificationManager.notify(new Random().nextInt(), notificationBuilder.build());
-
-
     }
 
     private void showNotification(String icon, String title, String body) {
